@@ -185,3 +185,21 @@ nexus/
 - **Git commits:** `feat:`, `fix:`, `refactor:` prefixes
 - **Env vars:** all secrets via `.env`, never hardcoded
 - **API responses:** always `{ success: bool, data: any, error: str | null }`
+
+
+Round 1 — GPT
+Date: 2026-03-11
+
+Completed:
+- Implemented FastAPI backend skeleton
+- Added /health endpoint
+- Implemented task router (POST /tasks, GET /tasks/{id})
+- Implemented WebSocket endpoint stub
+- Added Docker Compose with Postgres, Redis, Backend
+- Added backend Dockerfile + requirements.txt
+
+Next Suggested Work for Claude:
+1. Implement database layer (SQLAlchemy models)
+2. Create Redis memory service
+3. Initialize LangGraph skeleton (graph.py)
+4. Decide LangGraph version (v0.2 recommended)
